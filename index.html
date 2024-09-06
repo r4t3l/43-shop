@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>43S - Home</title>
+    <!-- bootstrap-icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- style -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <!-- container -->
+    <div class="wrapper">
+        <!-- aside-&-header -->
+        <aside>
+            <header>
+                <h1 class="logo">43SHOP</h1>
+            </header>
+                <nav>
+                    <ul class="menu">
+                        <li>
+                            <button class="btn cat-btn active" id="all-prod" ><i class="bi bi-triangle-fill"></i> All products</button>
+                        </li>
+                        <li>
+                            <button class="btn cat-btn" id="jacket-and-coats"><i class="bi bi-triangle"></i> Jacket & Coats</button>
+                        </li>
+                        <li>
+                            
+                            <button class="btn cat-btn" id="tshirts""><i class="bi bi-triangle"></i> T-Shirts</button>
+                        </li>
+                        <li>
+                            
+                            <button class="btn cat-btn" id="pants-and-jeans"><i class="bi bi-triangle"></i> Pants & Jeans</button>
+                        </li>
+                        <li>
+                            <a class="btn cart-btn " href="./cart.html">
+                                <i class="bi bi-cart-fill"></i> Cart <span class="counter" id="counter">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+        </aside>
+        <!-- main-section -->
+        <main>
+            <h2 class="main-title" id="main-title">All products</h2>
+            <!-- container-grid -->
+            <div id="products-container" class="products-container">
+
+                <!-- card-start -->
+
+                <!-- card-end -->
+
+            </div>
+        </main>
+    </div>
+
+    <!-- footer-section -->
+    <footer>
+        <p class="footer-text"><span id="year"></span> &copy; 43Shop. All rights reserved.</p>
+        <p>
+            <a href="/privacy">Privacy policy</a> | 
+            <a href="/terms">Terms y Conditions</a> | 
+            <a href="/contact">Contact</a>
+        </p>
+    </footer>
+
+    <!-- scripts -->
+    <script src="./js/index.js"></script>
+    <!-- copy-script -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

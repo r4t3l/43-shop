@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>43S - Cart</title>
+    <!-- bootstrap-icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- style -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- aside-&-header -->
+        <aside>
+            <header>
+                <h1 class="logo">43SHOP</h1>
+            </header>
+
+                <nav>
+                    <ul class="menu">
+                        <li>
+                            <a class="btn goback-btn" href="./index.html"><i class="bi bi-arrow-return-left"></i>Return to store</a>
+                        </li>
+
+                        <li>
+                            <a class="btn cart-btn active" href="./cart.html"><i class="bi bi-cart-fill"></i> Cart </a>
+                        </li>
+                    </ul>
+                </nav>
+        </aside>
+        <!-- main-section -->
+        <main>
+            <h2 class="main-title">In cart</h2>
+            <!-- container-grid -->
+            <div class="cart-container">
+                <p class="empty-cart" id="empty-cart" >Oops! Looks like you haven't added anything yet </p>
+
+                <div class="oncart-products disabled" id="oncart-products">
+
+                    <!-- item-start -->
+
+                    <!-- item-end -->
+
+                </div>
+                <div class="oncart-actions disabled" id="oncart-actions">
+                    <div class="side-a">
+                        <button class="cart-action-empty" id="cart-action-empty">Empty cart</button>
+                    </div>
+                    <div class="side-b">
+                        <div class="cart-action-total">
+                            <p>Total in cart: </p>
+                            <p id="total-in-cart"></p>
+                        </div>
+                        <button class="cart-action-buy" id="cart-action-buy">Buy Now</button>
+                    </div>
+                </div>
+                <p class="buyed-cart disabled" id="buyed-cart" >Thank you for your purchase! <i class=" bi bi-emoji-laughing"></i></p>
+            </div>
+        </main>
+    </div>
+    <script src="./js/cart.js"></script>
+</body>
+</html>
